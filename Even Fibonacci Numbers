@@ -1,0 +1,26 @@
+package fibonacci;
+import java.util.*;
+public class fibonacci 
+{
+	public static void main(String args[])
+	{
+		int x=1;
+		int y=2;
+		System.out.print(x+" "+y);
+		int sum=y;
+		for(int i=0;i<1000;i++)
+		{
+			int z=x+y;
+			System.out.print(" "+z);
+			if(z>4000000)
+				break;
+			else if(z%2==0)
+				sum=sum+z;
+			x=y;
+			y=z;
+			
+		}
+		System.out.println();
+		System.out.println(sum);
+	}
+}
